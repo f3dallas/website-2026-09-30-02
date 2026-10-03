@@ -1,0 +1,19 @@
+# React navigation payloads must be resolved before the document routes.
+/ _rsc=:payload /index.rsc 200!
+/connect _rsc=:payload /connect.rsc 200!
+/disclaimer _rsc=:payload /disclaimer.rsc 200!
+/photos _rsc=:payload /photos.rsc 200!
+/privacy _rsc=:payload /privacy.rsc 200!
+/t-claps _rsc=:payload /t-claps.rsc 200!
+/what-is-f3 _rsc=:payload /what-is-f3.rsc 200!
+/workouts _rsc=:payload /workouts.rsc 200!
+
+# Each page has its own pre-rendered HTML. Do not use an SPA catch-all.
+/ /index.html 200
+/connect /connect.html 200
+/disclaimer /disclaimer.html 200
+/photos /photos.html 200
+/privacy /privacy.html 200
+/t-claps /t-claps.html 200
+/what-is-f3 /what-is-f3.html 200
+/workouts /workouts.html 200
