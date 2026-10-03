@@ -5,7 +5,14 @@
   "outputDirectory": ".",
   "routes": [
     {
-      "src": "/_next/static/(.*)",
+      "src": "/_next/static/chunks/site-app-live\\.js",
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate"
+      },
+      "continue": true
+    },
+    {
+      "src": "/_next/static/(?!chunks/site-app-live\\.js)(.*)",
       "headers": {
         "Cache-Control": "public, max-age=31536000, immutable"
       },
