@@ -12,13 +12,6 @@
       "continue": true
     },
     {
-      "src": "/(.*)",
-      "headers": {
-        "X-Robots-Tag": "noindex, nofollow"
-      },
-      "continue": true
-    },
-    {
       "src": "/(.*)\\.rsc",
       "headers": {
         "Content-Type": "text/x-component; charset=utf-8",
